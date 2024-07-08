@@ -6,14 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
     
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-3574be54.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-cc9c0964.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-9eac0dea.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-12473ed9.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>2-snackbar</h1>
-    </section>
+  <section>
+      <a href="./index.html" class="nav-link">Go to home</a>
+      <form class="form">
+        <label class="label-delay">
+          Delay (ms)
+          <input class="input-delay" type="number" name="delay" required />
+        </label>
+        <fieldset class="state-container">
+          <legend>State</legend>
+          <label>
+            <input
+              class="visually-hidden radio-btn"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            <span class="radio-custom"></span>
+            Fulfilled
+          </label>
+          <label>
+            <input
+              class="visually-hidden radio-btn"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            <span class="radio-custom"></span>
+            Rejected
+          </label>
+        </fieldset>
+        <button class="input-btn" type="submit">Create notification</button>
+      </form>
+    </div>
+</section>
     
   </body>
 </html>
