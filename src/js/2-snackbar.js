@@ -31,11 +31,13 @@ document.querySelector('.form').addEventListener('submit', function (event) {
     .then(delay => {
       iziToast.success({
         message: ` ✅ Fulfilled promise in ${delay}ms`,
+        backgroundColor: '#34c540',
       });
     })
     .catch(delay => {
       iziToast.error({
         message: `❌ Rejected promise in ${delay}ms`,
+        backgroundColor: '#d85858',
       });
     });
 });
